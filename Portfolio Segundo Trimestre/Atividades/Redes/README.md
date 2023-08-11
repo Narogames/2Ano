@@ -1,0 +1,1 @@
+Atividade que utilizamos conhecimento sobre máscara de rede, endereço de rede e n° de dispositivo.

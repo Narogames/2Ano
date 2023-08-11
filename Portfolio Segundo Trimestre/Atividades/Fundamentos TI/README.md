@@ -1,0 +1,1 @@
+Atividade de apresentação sobre processadores. Foi pra mim uma das atividades mais legais e marcantes do trimestre. Deu para pegar muito conteúdo por essa atividade, principalmente sobre processadores, diferença entre eles e o que cada um faz.
