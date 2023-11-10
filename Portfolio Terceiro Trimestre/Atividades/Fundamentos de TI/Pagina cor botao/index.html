@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudar cor</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+    
+   <div id="container">
+  
+    <button class="botao">Me Aperte</button>
+    <h1>A Décima cor que cair para você, é sua cor da SORTE!</h1>
+    </div>
+   
+
+    <script>
+    function gerarCorAleatoria() {
+        const letrasHexadecimais = '0123456789ABCDEF';
+        let cor = '#';
+        for (let i = 0; i < 6; i++) {
+            cor += letrasHexadecimais[Math.floor(Math.random() * 16)];
+        }
+        return cor;
+    }
+    
+    function mudarCorDeFundo() {
+        const novaCor = gerarCorAleatoria();
+        document.body.style.backgroundColor = novaCor;
+    }
+    
+    const botaoMudarCor = document.querySelector(".botao");
+    botaoMudarCor.addEventListener("click", mudarCorDeFundo);
+    var elemento = document.querySelector(".botao");
+    elemento.addEventListener('mouseover', mudarCorDeFundo);
+    </script>
+</body>
+</html>
